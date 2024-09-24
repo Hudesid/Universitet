@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kafedralar</title>
+</head>
+<body>
+<h1>{{faculty.name}}</h1>
+<ul>
+{% for kafedra in faculty.kafedra.all %}
+
+    <li><a href="{% url 'group' pk=kafedra.pk %}">{{kafedra.name}}</a></li>
+
+{% endfor %}
+</ul>
+</body>
+</html>

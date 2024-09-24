@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subjects</title>
+</head>
+<body>
+<ul>
+{% for subject in subjects %}
+    <li><a href="{% url 'teacher' pk=subject.pk%}">subject.name</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>

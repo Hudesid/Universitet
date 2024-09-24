@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Teacher</title>
+</head>
+<body>
+{% for teacher in teachers %}
+        <h1>{{teacher.last_name}}{{student.first_name}}</h1>
+        <h3>Date of birth: {{teacher.date_of_birth}}</h3>
+        <h3>Email: {{teacher.email}}</h3>
+        <h3>Phone number: {{teacher.phone_number}}</h3>
+{% endfor %}
+</body>
+</html>
